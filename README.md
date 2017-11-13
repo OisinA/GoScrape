@@ -3,3 +3,5 @@ I wrote this basic scraping tool and web display in order to practice the basics
 
 ## To use
 You have to build the files using a Go compiler. Once built, run the program and input each URL to be scraped. It will then run through each one and the results can then be found through a web browser by going to localhost/:300.
+
+Uses github.com/mattn/go-sqlite3 as the SQLite driver.
