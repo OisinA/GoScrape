@@ -23,6 +23,7 @@ func main() {
     http.ListenAndServe(":300", nil)
 }
 
+//Take in the input from the user. It returns a list of links.
 func receiveInput() []string {
     fmt.Println("Input each URL to be scraped (press ENTER to stop input): ")
     reader := bufio.NewReader(os.Stdin)
@@ -48,6 +49,7 @@ func receiveInput() []string {
     return links
 }
 
+//Prepare and serve the page to the user.
 func ServePage(w http.ResponseWriter, r *http.Request) {
     w.Header().Set("Content-Type", "text/html")
 
